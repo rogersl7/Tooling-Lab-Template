@@ -6,7 +6,10 @@
     "start": "open index.html",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "postinstall": "node .scripts/badge.js"
+    "postinstall": "node .scripts/badge.js",
+    "lint": "eslint -c eslint.config.mjs resources/scripts",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "author": "Yahya Gilany <gilanyym@ucmail.uc.edu>",
   "license": "UNLICENSED",
@@ -17,6 +20,7 @@
     "@testing-library/dom": "^7.31.0",
     "@testing-library/jest-dom": "^5.8.0",
     "@types/jest": "^25.2.3",
+    "cypress": "^13.13.1",
     "directory-tree": "^2.2.4",
     "eslint": "^9.7.0",
     "globals": "^15.8.0",
@@ -25,6 +29,8 @@
     "lodash": "^4.17.15",
     "prettier": "^2.3.0",
     "regenerator-runtime": "^0.13.5",
-    "simple-git": "^2.5.0"
+    "simple-git": "^2.5.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
   }
 }
